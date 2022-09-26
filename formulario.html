@@ -9,30 +9,38 @@
 <body>
     <br/>
 <b> <high>VAMOS HACER UN FORMAULARIO</high> </b>
-<form>
-    <!-- Nombre de la varible-->
-    <br>
-    <label> 
-        Usuario:
-    </label>
-    <!-- el input indica que va a ingresar algo por teclado y el type me dice de que tipo es-->
-    <input type="text">
-    <br>
-    <label>
-        Contraseña:
-    </label>
-    <input type="password">
-
-    <!-- Pongo el boton el tipo de dato y el nombre que se ve-->
-    <input type="submit" value="Ingresar">
-
-    <!-- Ingreso un radio button por si o no-->
-    <label> Si </label>
-    <input type="radio" name="nuevo">
-    <label> No </label>
-    <input type="radio" name="nuevo">
-
-
-</form>
+<form >
+    <table >
+     <tr>
+         <td>
+            URL:
+         </td>
+         <td>
+             <input type="url" name="url" required>
+         </td>
+        </tr>
+        <tr>
+            <td>
+                Numeros:
+            </td>
+            <td>
+                <input type="number" step="3" min="0" max="15">
+            </td>
+        </tr>
+     
+         <!--Boton Enviar-->
+     <tr>
+         <td colspan="2">
+             <button>
+                 Enviar
+             </button>
+             <!-- En vez de un boton borrar uso un input de tipo reset, borra todo los contenidos de los campos-->
+             <input type="reset" value ="Limpiar">
+         </td>
+     </tr>
+    </table>
+     
+ </form>
 </body>
+ <a href="index.html"> Volver</a>
 </html>
