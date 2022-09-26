@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4</title>
+</head>
+<body>
+    <h1> Clase 4</h1>
+    <!--Action es un atributo muy importante que le deci al programa a donde se va cuando se presione el boton-->
+    <!--Method es otro atributo importante, que lleva el post o get. -->
+    <!-- Si se envia informacion con el metodo "Get" la informacion se va a ver en la URL, se lo usa para filtrar informacion o ir a buscarla en algun servidor-->
+    <br>
+    <form 
+     action="index.html"
+     method="get">
+        <label > Usuario </label>
+        <input type="text" name="Usurio">
+        <label > Contraseña: </label>
+        <input type="password" name=" password" >
+        
+            <!-- Cuando se presiona enviar va a la pagina principal, y la URL agrega un signo ? -->
+            <!-- Selector de opciones-->
+                <label > Edad: </label>
+            <select name = "edad">
+               <option value="Joven"> 18 - 25</option>
+               <option value="Adulto"> 26 - 35</option> 
+            </select>
+            <br>
+            <!-- Agregue fecha-->
+            <label > Fecha de Nacimiento: </label>
+            <input type="date" name="fechaNacimiento">
+            <input type="submit"
+                   value="Enviar">
+    </form>
+   
+    <!-- El metodo POST se usa para enviar la informacion por detras, como usuarios y contraseñas-->
+   <!--- <form
+     action="index.html"
+     method="post">
+        <label > Usuario2 </label>
+        <input type="text" name="Usurio">
+        <label > Contraseña:2 </label>
+        <input type="password" name=" password" >
+        <input type="submit"
+            value="Enviar">
+               
+    </form> -->
+
+
+
+</body>
+</html>
